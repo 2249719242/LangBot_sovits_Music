@@ -2,7 +2,7 @@
 ## 参考项目
 
 [LangBot_RVC项目](https://github.com/zzseki/LangBot_RVC_Music?tab=readme-ov-file) 
-与原项目相比，增加了清除显存等垃圾回收机制（不然会报错，个人配置4060 8G）
+与原项目相比，由于sovits4.1要求更高，增加了清除显存等垃圾回收机制（不然会报错，个人配置4060 8G）
 
 ## 安装
 
