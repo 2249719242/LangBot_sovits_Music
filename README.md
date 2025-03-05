@@ -7,12 +7,13 @@
 [LangBot_RVC项目](https://github.com/zzseki/LangBot_RVC_Music?tab=readme-ov-file) 
 
 
-由于sovits4.1要求更高，与原项目相比，人声分离端以及sovits端均增加了清除显存等垃圾回收机制（不然会爆显存，个人配置4060 8G）,在sovits推理端采用切片推理(切片大小设置为10秒)
+由于 sovits4.1 的要求更高，相较于原项目，本项目在人声分离端和 sovits 端均新增了显存清理及垃圾回收机制（否则显存容易溢出，个人配置为 4060 8G）。此外，在 sovits 推理端采用了切片推理的方式（切片大小设定为 10 秒），以优化性能。
 
+由于目前使用的是旧版 Qchat，音频转换为 QQ 语音的功能依赖于 yiri-mirai 库。而在新版 Langbot 中，其内置库与 yiri-mirai 存在冲突，导致无法安装 yiri-mirai 库。
 
-(由于使用的是旧版Qchat，将音频转换为qq语音的是yiri-mirai库，新版Langbot中的库与其冲突，无法安装yiri-mirai库)
+Tips:若需兼容新版本，需对本项目中 main.py 的代码段进行修改，具体为：ctx.add_return("reply", [Voice(path=str(silk_path))])。其中，Voice 的作用是将音频转换为 QQ 录音格式.
 
-若要兼容新版本，需要修改本项目中main.py中的代码段：ctx.add_return("reply", [Voice(path=str(silk_path))])。其中的Voice是把音频转换为qq录音,或者将sovits的输出文件转换为语言格式。（本人还未完成修改)：
+或者在sovits项目中将输出文件转换为目标语音格式。（目前本人尚未完成相关修改，后面有空改一下）
 
 
 ## 安装
