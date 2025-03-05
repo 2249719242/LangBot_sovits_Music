@@ -7,7 +7,7 @@
 [LangBot_RVC项目](https://github.com/zzseki/LangBot_RVC_Music?tab=readme-ov-file) 
 
 
-由于 sovits4.1 的要求更高，相较于原项目，本项目在人声分离端和 sovits 端均新增了显存清理及垃圾回收机制（否则显存容易溢出，个人配置为 4060 8G）。此外，在 sovits 推理端采用了切片推理的方式（切片大小设定为 10 秒），以优化性能。
+由于 sovits4.1 的要求更高，相较于原项目，本项目在人声分离端和 sovits 端均新增了显存清理及垃圾回收机制（否则显存容易溢出，个人配置为 4060 8G）。此外，在 sovits 推理端采用了切片推理的方式（切片大小设定为 10 秒）。
 
 由于目前使用的是旧版 Qchat，音频转换为 QQ 语音的功能依赖于 yiri-mirai 库。而在新版 Langbot 中，其内置库与 yiri-mirai 存在冲突，导致无法安装 yiri-mirai 库。
 
