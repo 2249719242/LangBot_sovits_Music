@@ -45,7 +45,7 @@ cookie = "YOUR_COOKIE"  # 请将这里的'YOUR_COOKIE'替换为你实际获取�
 if spk=='ly':#(spk需要与config_name中的speaker一致)
    model_name = "models/G_56800.pth"  # 模型地址
    config_name = "configs/config.json"  # config地址
-   diffusion_path="models/diffusion/model_7000.pt"向bot发送：
+   diffusion_path="models/diffusion/model_7000.pt"#如果没有diffusion模型可以直接删除这行
 ```
 
 ## 使用
