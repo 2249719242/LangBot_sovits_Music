@@ -37,17 +37,20 @@ Tips:若需兼容新版本，需对本项目中 main.py 的代码段进行修改
 4、前往https://www.alapi.cn/  进行注册，用来获取网易云的歌曲（免费一天时间，后面要冲会员）
 
    在token管理中点击Copy复制Token
-   然后搜索并开启网易云API
+   
+   然后点击‘我的接口’，搜索并开启网易云接口
 
-   在本插件文件夹下main.py文件中找到这行，并替换成你获取到的token（不要弄丢引号）
+   在本插件文件夹下main.py文件中找到以下代码行，并替换成你获取到的token（不要弄丢引号）
 
 ```
 ./LANGBOT_SOVITS_MUSIC/main.py
 token = 'YOURTOKEN'  # 请将这里的'YOUR_TOKEN'替换为你实际获取的token
 cookie = "YOUR_COOKIE"  # 请将这里的'YOUR_COOKIE'替换为你实际获取的cookie
 #关于cookie的获取方式可以参考这个网址：https://blog.csdn.net/qq_46607667/article/details/136751625
+
 ```
-以及修改flask_api_full_song_slice.py文件
+
+同时修改flask_api_full_song_slice.py文件：
 ```
 if spk=='ly':#(spk需要与config_name中的speaker一致)
    model_name = "models/G_56800.pth"  # 模型地址
