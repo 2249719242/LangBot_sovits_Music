@@ -4,7 +4,7 @@
 [LangBot_RVC项目](https://github.com/zzseki/LangBot_RVC_Music?tab=readme-ov-file) 
 
 
-由于sovits4.1要求更高，与原项目相比，人声分离端以及sovits端均增加了清除显存等垃圾回收机制（不然会报错，个人配置4060 8G）,在sovits推理端采用切片推理(切片大小设置为10秒)
+由于sovits4.1要求更高，与原项目相比，人声分离端以及sovits端均增加了清除显存等垃圾回收机制（不然会爆显存，个人配置4060 8G）,在sovits推理端采用切片推理(切片大小设置为10秒)
 
 
 (由于使用的是旧版Qchat，将音频转换为qq语音的是yiri-mirai库，新版Langbot中的库与其冲突，无法安装yiri-mirai库)
