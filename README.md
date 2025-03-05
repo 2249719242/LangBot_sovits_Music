@@ -40,14 +40,13 @@ token = 'YOURTOKEN'  # 请将这里的'YOUR_TOKEN'替换为你实际获取的tok
 cookie = "YOUR_COOKIE"  # 请将这里的'YOUR_COOKIE'替换为你实际获取的cookie
 #关于cookie的获取方式可以参考这个网址：https://blog.csdn.net/qq_46607667/article/details/136751625
 ```
-以及flask_api_full_song_slice.py
-修改这段：
-spk需要与config_name中的speaker一致
-if spk=='ly':
+以及修改flask_api_full_song_slice.py文件
+```
+if spk=='ly':#(spk需要与config_name中的speaker一致)
    model_name = "models/G_56800.pth"  # 模型地址
    config_name = "configs/config.json"  # config地址
    diffusion_path="models/diffusion/model_7000.pt"向bot发送：
-
+```
 
 ## 使用
 
