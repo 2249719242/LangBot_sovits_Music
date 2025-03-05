@@ -1,4 +1,7 @@
 #HEAD
+
+让你的qq机器人利用sovits4.1模型实现翻唱
+
 ## 参考项目
 
 [LangBot_RVC项目](https://github.com/zzseki/LangBot_RVC_Music?tab=readme-ov-file) 
