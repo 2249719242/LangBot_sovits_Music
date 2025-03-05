@@ -1,7 +1,12 @@
-<<<<<<< HEAD
+#HEAD
+## 参考项目
+
+[LangBot_RVC项目](https://github.com/zzseki/LangBot_RVC_Music?tab=readme-ov-file) 
+与原项目相比，增加了清除显存等垃圾回收机制（不然会报错，个人配置4060 8G）
+
 ## 安装
 
-配置完成 主程序后使用管理员账号向机器人发送命令即可安装(由于使用的是yiri-mirai库，所以对新版Langbot不适用，若要兼容新版本，需要修改main.py中的ctx.add_return("reply", [Voice(path=str(silk_path))])，其中的Voice是把音频转换为qq录音。（但本人还未完成修改)：
+配置完成 主程序后使用管理员账号向机器人发送命令即可安装(由于使用的是yiri-mirai库，所以对新版Langbot不适用，若要兼容新版本，需要修改main.py中的ctx.add_return("reply", [Voice(path=str(silk_path))])，其中的Voice是把音频转换为qq录音,或者将sovits的输出文件转换为语言格式。（但本人还未完成修改)：
 
 ```
 !plugin get <插件发布仓库地址>
