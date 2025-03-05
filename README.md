@@ -33,9 +33,10 @@
 
 3、需要下载安装ffmpeg   
 
-4、前往https://www.alapi.cn/  进行注册（免费一天时间，后面要冲会员）
+4、前往https://www.alapi.cn/  进行注册，用来获取网易云的歌曲（免费一天时间，后面要冲会员）
 
    在token管理中点击Copy复制Token
+   然后搜索并开启网易云API
 
    在本插件文件夹下main.py文件中找到这行，并替换成你获取到的token（不要弄丢引号）
 
