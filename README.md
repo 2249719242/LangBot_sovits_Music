@@ -20,7 +20,7 @@
 ```
 或查看详细的[插件安装说明](https://github.com/RockChinQ/QChatGPT/wiki/5-%E6%8F%92%E4%BB%B6%E4%BD%BF%E7%94%A8)
 
-## 使用  
+## 配置
 1、需要先部署[sovits项目](https://github.com/svc-develop-team/so-vits-svc)  
 
 2、将"flask_api_full_song_slice.py"和"开启接口服务.bat"文件剪切sovits项目的主目录下
@@ -28,7 +28,7 @@
 
 3、需要下载安装ffmpeg   
 
-4、前往https://www.alapi.cn/  进行注册（截至上传时是免费的）
+4、前往https://www.alapi.cn/  进行注册（免费一天时间，后面要冲会员）
 
    在token管理中点击Copy复制Token
 
@@ -45,4 +45,10 @@ spk需要与config_name中的speaker一致
 if spk=='ly':
    model_name = "models/G_56800.pth"  # 模型地址
    config_name = "configs/config.json"  # config地址
-   diffusion_path="models/diffusion/model_7000.pt"
+   diffusion_path="models/diffusion/model_7000.pt"向bot发送：
+
+
+## 使用
+
+配置好后，向机器人发送 #翻唱[music_name][number][model_name]即可，
+
