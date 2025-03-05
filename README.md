@@ -38,6 +38,7 @@
 ./LANGBOT_SOVITS_MUSIC/main.py
 token = 'YOURTOKEN'  # 请将这里的'YOUR_TOKEN'替换为你实际获取的token
 cookie = "YOUR_COOKIE"  # 请将这里的'YOUR_COOKIE'替换为你实际获取的cookie
+#关于cookie的获取方式可以参考这个网址：https://blog.csdn.net/qq_46607667/article/details/136751625
 ```
 以及flask_api_full_song_slice.py
 修改这段：
@@ -50,5 +51,5 @@ if spk=='ly':
 
 ## 使用
 
-配置好后，向机器人发送 #翻唱[music_name][number][model_name]即可，
+配置好后，向机器人发送 #翻唱[歌名 歌手名][升key或降key][模型说话人名称]即可，
 
